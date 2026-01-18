@@ -8,7 +8,7 @@ const DigitalIdentityCard: React.FC = () => {
   const scanLineRef = useRef<HTMLDivElement>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
-  const ORIGINAL_ID = "BAT-8922-X7-ABCD-EFGH-IJKL-MNOP";
+  const ORIGINAL_ID = "BAT-8922-X754-A";
   const CHARS = "ABCDEF0123456789XYZ";
   const handleMouseEnter = () => {
     // 1. Scramble Text Effect
@@ -62,7 +62,7 @@ const DigitalIdentityCard: React.FC = () => {
 
   return (
     <div 
-      className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-gray-100 h-[320px] flex flex-col justify-between relative"
+      className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-gray-100 min-h-[320px] flex flex-col justify-between relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -84,17 +84,19 @@ const DigitalIdentityCard: React.FC = () => {
       </div>
 
       <div className="mt-4">
-        <div className="flex justify-between text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2">
+        <div className="flex justify-between text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2 px-1">
           <span>Sample ID</span>
-          <span className="text-primary flex items-center gap-1">
+          <span className="text-primary flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
             Active
           </span>
         </div>
-        <div className="bg-gray-50 border border-gray-100 group-hover:border-primary/30 group-hover:bg-primary/5 transition-colors duration-300 rounded-lg p-3 flex items-center justify-center relative overflow-hidden">
-          <code ref={idRef} className="font-mono text-lg font-bold text-main tracking-widest relative z-10">
+        <div className="bg-gray-50 border border-gray-100 group-hover:border-primary/30 group-hover:bg-primary/5 transition-all duration-300 rounded-xl p-4 flex items-center justify-center relative overflow-hidden">
+          <code ref={idRef} className="font-mono text-xl font-bold text-main tracking-widest relative z-10">
             {ORIGINAL_ID}
           </code>
+          {/* Subtle background decoration for the ID box */}
+          <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.05] transition-opacity pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)', backgroundSize: '12px 12px' }}></div>
         </div>
       </div>
     </div>
