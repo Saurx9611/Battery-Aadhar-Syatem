@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import MainGrid from './components/MainGrid';
 import FeatureCards from './components/FeatureCards';
 import Marquee from './components/Marquee';
+import BrandFooter from './components/BrandFooter';
 
 const App: React.FC = () => {
   return (
@@ -21,16 +22,7 @@ const App: React.FC = () => {
         <FeatureCards />
       </main>
 
-      <footer className="border-t border-gray-200 py-8 text-center text-sm text-gray-400">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-             <p>© 2024 Battery Aadhaar Initiative. All rights reserved.</p>
-             <div className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-primary transition-colors">Registry API</a>
-             </div>
-        </div>
-      </footer>
+      <BrandFooter />
     </div>
   );
 };
