@@ -8,7 +8,7 @@ const DigitalIdentityCard: React.FC = () => {
   const scanLineRef = useRef<HTMLDivElement>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
-  const ORIGINAL_ID = "BAT-8922-X754-A";
+  const ORIGINAL_ID = "BAT-8922-X754-Y123-Z987-Q5";
   const CHARS = "ABCDEF0123456789XYZ";
   const handleMouseEnter = () => {
     // 1. Scramble Text Effect
@@ -79,7 +79,7 @@ const DigitalIdentityCard: React.FC = () => {
         
         <h3 className="font-display text-2xl font-bold text-main mb-3 group-hover:text-primary transition-colors duration-300">Unique Digital Identity</h3>
         <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-600 transition-colors">
-          Just like a citizen ID, every battery gets a permanent 12-digit code linking the physical unit to a secure registry.
+          Just like a citizen ID, every battery gets a permanent 21-digit code linking the physical unit to a secure registry.
         </p>
       </div>
 

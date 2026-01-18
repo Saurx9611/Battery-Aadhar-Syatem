@@ -8,13 +8,13 @@
 
 ## 📖 Overview
 
-The **Battery Aadhaar System** is a conceptual web platform designed to assign a unique 12-digit digital identity (similar to the Indian Aadhaar ID) to every battery pack. This project serves as a frontend visualization of that system, demonstrating how digital passports can track a battery's lifecycle—from manufacturing and usage to second-life applications and recycling.
+The **Battery Aadhaar System** is a conceptual web platform designed to assign a unique 21-digit digital identity (similar to the Indian Aadhaar ID) to every battery pack. This project serves as a frontend visualization of that system, demonstrating how digital passports can track a battery's lifecycle—from manufacturing and usage to second-life applications and recycling.
 
 This repository contains the source code for the landing page, featuring high-fidelity UI design, smooth GSAP animations, and a modern "Eco-Tech" aesthetic.
 
 ## ✨ Key Features
 
-* **Unique Digital Identity:** Visualization of the unique 12-digit code generation (e.g., `BAT-8922-X7`).
+* **Unique Digital Identity:** Visualization of the unique 21-digit code generation (e.g., `BAT-8922-X754-Y123-Z987-Q5`).
 * **Live Digital Twin:** An animated central dashboard element simulating real-time monitoring of battery health (SOH), temperature, and voltage.
 * **Interactive Lifecycle:** A vertical timeline tracking the battery journey: Manufacturing → Usage → Second Life → Recycling.
 * **Sustainability Metrics:** Dynamic data visualization for recycling targets (95% recovery) and carbon footprint tracking.
