@@ -8,9 +8,8 @@ const DigitalIdentityCard: React.FC = () => {
   const scanLineRef = useRef<HTMLDivElement>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
-  const ORIGINAL_ID = "BAT-8922-X7";
+  const ORIGINAL_ID = "BAT-8922-X7-ABCD-EFGH-IJKL-MNOP";
   const CHARS = "ABCDEF0123456789XYZ";
-
   const handleMouseEnter = () => {
     // 1. Scramble Text Effect
     if (tweenRef.current) tweenRef.current.kill();
@@ -63,7 +62,7 @@ const DigitalIdentityCard: React.FC = () => {
 
   return (
     <div 
-      className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-gray-100 h-[320px] flex flex-col justify-between relative overflow-hidden"
+      className="bg-card rounded-3xl p-8 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group border border-gray-100 h-[320px] flex flex-col justify-between relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
